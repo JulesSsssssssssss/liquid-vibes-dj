@@ -27,9 +27,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <h3 className="font-display text-2xl font-bold mb-4">
-              <span className="text-gradient-gold">T.S</span> EVENT
-            </h3>
+            <div className="mb-6">
+              <img 
+                src="/logo.png" 
+                alt="T.S Event Logo" 
+                className="h-24 w-auto object-contain"
+              />
+            </div>
             <p className="text-muted-foreground text-sm mb-6">
               DJ professionnel depuis 2010. Créateur de vibes et de soirées inoubliables à Nantes et en Pays de la Loire.
             </p>
@@ -57,6 +61,7 @@ const Footer = () => {
                 { name: "Soirée Privée", href: "/contact" },
                 { name: "Location Matériel", href: "/location" },
                 { name: "Photobooth", href: "/photobooth" },
+                { name: "Galerie", href: "/galerie" },
               ].map((item) => (
                 <li key={item.name}>
                   <Link
@@ -120,6 +125,31 @@ const Footer = () => {
                 Pioneer Premium
               </span>
             </div>
+          </div>
+        </div>
+
+        {/* SEO Local Section */}
+        <div className="mb-12 pt-8 border-t border-border">
+          <h4 className="font-display font-semibold text-lg mb-6 text-center">
+            DJ Professionnel en Pays de la Loire
+          </h4>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              { name: "DJ Nantes", href: "/dj-nantes" },
+              { name: "DJ Saint-Nazaire", href: "/dj-saint-nazaire" },
+              { name: "DJ Angers", href: "/dj-angers" },
+              { name: "DJ La Roche-sur-Yon", href: "/dj-la-roche-sur-yon" },
+              { name: "DJ Le Mans", href: "/dj-le-mans" },
+              { name: "DJ Laval", href: "/dj-laval" },
+            ].map((item) => (
+              <Link
+                key={item.name}
+                to={item.href}
+                className="px-4 py-2 rounded-lg bg-muted/30 text-muted-foreground hover:bg-primary/10 hover:text-primary transition-colors text-sm"
+              >
+                {item.name}
+              </Link>
+            ))}
           </div>
         </div>
 

@@ -48,7 +48,7 @@ const Contact = () => {
             >
               <h1 className="font-display text-4xl md:text-6xl font-bold mb-6">
                 Parlons de votre{" "}
-                <span className="text-gradient-gold">projet</span>
+                <span className="text-gradient-purple">projet</span>
               </h1>
               <p className="text-muted-foreground text-lg">
                 Une question ? Un projet d'événement ? Contactez-moi pour un devis personnalisé et gratuit.

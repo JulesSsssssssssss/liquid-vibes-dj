@@ -64,7 +64,7 @@ const Location = () => {
             >
               <h1 className="font-display text-4xl md:text-6xl font-bold mb-6">
                 Location de{" "}
-                <span className="text-gradient-gold">matériel</span>
+                <span className="text-gradient-purple">matériel</span>
               </h1>
               <p className="text-muted-foreground text-lg mb-8">
                 Matériel professionnel Pioneer pour vos événements. Son, lumière, effets : 
@@ -89,7 +89,7 @@ const Location = () => {
               className="text-center mb-16"
             >
               <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-                Notre <span className="text-gradient-gold">catalogue</span>
+                Notre <span className="text-gradient-purple">catalogue</span>
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
                 Du matériel professionnel entretenu et vérifié avant chaque location.

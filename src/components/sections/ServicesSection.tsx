@@ -46,7 +46,7 @@ const ServicesSection = () => {
           className="text-center mb-16"
         >
           <h2 className="font-display text-3xl md:text-5xl font-bold mb-4">
-            Mes <span className="text-gradient-gold">Prestations</span>
+            Mes <span className="text-gradient-purple">Prestations</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Des animations DJ adaptées à chaque type d'événement, avec un service clé en main.

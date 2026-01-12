@@ -93,7 +93,7 @@ const Entreprise = () => {
               className="text-center mb-16"
             >
               <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-                Types d'<span className="text-gradient-gold">événements</span>
+                Types d'<span className="text-gradient-purple">événements</span>
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
                 Une expertise adaptée à chaque format d'événement professionnel.
@@ -135,7 +135,7 @@ const Entreprise = () => {
               >
                 <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
                   Pourquoi choisir{" "}
-                  <span className="text-gradient-gold">T.S Event</span> ?
+                  <span className="text-gradient-purple">T.S Event</span> ?
                 </h2>
                 <p className="text-muted-foreground mb-8">
                   Fort de mon expérience en événementiel corporate, je comprends les enjeux 

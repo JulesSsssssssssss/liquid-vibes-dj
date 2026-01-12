@@ -68,7 +68,7 @@ const Mariage = () => {
               
               <h1 className="font-display text-4xl md:text-6xl font-bold mb-6">
                 Une ambiance unique pour votre{" "}
-                <span className="text-gradient-gold">jour J</span>
+                <span className="text-gradient-purple">jour J</span>
               </h1>
               
               <p className="text-lg text-muted-foreground mb-8">
@@ -103,7 +103,7 @@ const Mariage = () => {
               >
                 <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
                   Mon approche pour{" "}
-                  <span className="text-gradient-gold">votre mariage</span>
+                  <span className="text-gradient-purple">votre mariage</span>
                 </h2>
                 <p className="text-muted-foreground mb-6">
                   Chaque mariage est unique et mérite une attention particulière. 
@@ -156,7 +156,7 @@ const Mariage = () => {
             >
               <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
                 Déroulé type d'une{" "}
-                <span className="text-gradient-gold">soirée de mariage</span>
+                <span className="text-gradient-purple">soirée de mariage</span>
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
                 Chaque moment est pensé pour créer une progression naturelle vers une ambiance festive.
@@ -201,7 +201,7 @@ const Mariage = () => {
             >
               <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
                 Formules{" "}
-                <span className="text-gradient-gold">mariage</span>
+                <span className="text-gradient-purple">mariage</span>
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
                 Des formules adaptées à chaque budget. Devis personnalisé sur demande.

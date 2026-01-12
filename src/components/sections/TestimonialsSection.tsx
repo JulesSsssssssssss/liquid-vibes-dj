@@ -51,7 +51,7 @@ const TestimonialsSection = () => {
             <span className="text-sm text-primary font-medium">5/5 sur 57 avis Google</span>
           </div>
           <h2 className="font-display text-3xl md:text-5xl font-bold mb-4">
-            Ce qu'ils <span className="text-gradient-gold">disent de moi</span>
+            Ce qu'ils <span className="text-gradient-purple">disent de moi</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             La satisfaction de mes clients est ma priorité. Découvrez leurs témoignages.

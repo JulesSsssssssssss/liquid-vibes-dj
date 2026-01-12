@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
 /* T.S EVENT Design System - Premium DJ Website */
 
@@ -18,18 +18,18 @@
     --popover: 0 0% 6%;
     --popover-foreground: 0 0% 100%;
 
-    /* Gold Accent - Premium Feel */
-    --primary: 43 74% 53%;
-    --primary-foreground: 0 0% 4%;
+    /* Purple Flash - Premium Feel */
+    --primary: 280 100% 65%;
+    --primary-foreground: 0 0% 100%;
 
-    /* Electric Blue - Liquid Effects */
-    --secondary: 189 100% 50%;
-    --secondary-foreground: 0 0% 4%;
+    /* Electric Purple - Liquid Effects */
+    --secondary: 260 60% 45%;
+    --secondary-foreground: 0 0% 100%;
 
     --muted: 0 0% 12%;
     --muted-foreground: 0 0% 65%;
 
-    --accent: 260 60% 45%;
+    --accent: 280 100% 65%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -37,36 +37,36 @@
 
     --border: 0 0% 15%;
     --input: 0 0% 15%;
-    --ring: 43 74% 53%;
+    --ring: 280 100% 65%;
 
     --radius: 0.75rem;
 
     /* Custom Colors */
-    --gold: 43 74% 53%;
-    --gold-light: 43 74% 65%;
-    --electric-blue: 189 100% 50%;
+    --purple-flash: 280 100% 65%;
+    --purple-light: 290 100% 75%;
+    --electric-purple: 280 100% 65%;
     --deep-purple: 260 60% 35%;
     --dark-blue: 220 60% 15%;
 
     /* Gradients */
     --gradient-liquid: linear-gradient(135deg, hsl(0 0% 4%) 0%, hsl(220 60% 10%) 50%, hsl(260 50% 15%) 100%);
-    --gradient-gold: linear-gradient(135deg, hsl(43 74% 53%) 0%, hsl(43 74% 65%) 100%);
+    --gradient-purple: linear-gradient(135deg, hsl(280 100% 65%) 0%, hsl(290 100% 75%) 100%);
     --gradient-glass: linear-gradient(135deg, hsla(0 0% 100% / 0.1) 0%, hsla(0 0% 100% / 0.05) 100%);
 
     /* Shadows */
-    --shadow-glow: 0 0 40px hsla(189 100% 50% / 0.15);
-    --shadow-gold: 0 0 30px hsla(43 74% 53% / 0.3);
+    --shadow-glow: 0 0 40px hsla(280 100% 65% / 0.2);
+    --shadow-purple: 0 0 30px hsla(280 100% 65% / 0.4);
     --shadow-card: 0 25px 50px -12px hsla(0 0% 0% / 0.5);
 
     /* Sidebar */
     --sidebar-background: 0 0% 6%;
     --sidebar-foreground: 0 0% 100%;
-    --sidebar-primary: 43 74% 53%;
-    --sidebar-primary-foreground: 0 0% 4%;
+    --sidebar-primary: 280 100% 65%;
+    --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 0 0% 12%;
     --sidebar-accent-foreground: 0 0% 100%;
     --sidebar-border: 0 0% 15%;
-    --sidebar-ring: 43 74% 53%;
+    --sidebar-ring: 280 100% 65%;
   }
 }
 
@@ -105,7 +105,7 @@
   .btn-liquid::before {
     content: '';
     @apply absolute inset-0 -z-10;
-    background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), hsla(189 100% 50% / 0.3), transparent 50%);
+    background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), hsla(280 100% 65% / 0.3), transparent 50%);
     transition: opacity 0.3s;
     opacity: 0;
   }
@@ -114,14 +114,14 @@
     opacity: 1;
   }
 
-  /* Gold Glow */
-  .glow-gold {
-    box-shadow: 0 0 30px hsla(43 74% 53% / 0.4);
+  /* Purple Flash Glow */
+  .glow-purple {
+    box-shadow: 0 0 30px hsla(280 100% 65% / 0.5);
   }
 
-  /* Electric Blue Glow */
+  /* Electric Purple Glow */
   .glow-electric {
-    box-shadow: 0 0 40px hsla(189 100% 50% / 0.3);
+    box-shadow: 0 0 40px hsla(280 100% 65% / 0.4);
   }
 
   /* Animated Blob */
@@ -144,19 +144,24 @@
 
   /* Liquid Border */
   .liquid-border {
-    @apply relative;
+    @apply relative transition-all duration-500;
   }
 
   .liquid-border::before {
     content: '';
     @apply absolute -inset-[1px] rounded-2xl -z-10;
-    background: linear-gradient(90deg, hsla(43 74% 53% / 0.5), hsla(189 100% 50% / 0.5), hsla(260 60% 45% / 0.5));
+    background: hsl(280 100% 65%);
     opacity: 0;
     transition: opacity 0.5s;
+    box-shadow: 0 0 20px hsla(280 100% 65% / 0.6);
   }
 
   .liquid-border:hover::before {
-    opacity: 1;
+    opacity: 0.3;
+  }
+  
+  .liquid-border:hover {
+    transform: translateY(-2px);
   }
 
   /* Wave Separator */
@@ -165,14 +170,14 @@
   }
 
   /* Text Gradient */
-  .text-gradient-gold {
+  .text-gradient-purple {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(43 74% 53%) 0%, hsl(43 74% 70%) 100%);
+    background-image: linear-gradient(135deg, hsl(280 100% 65%) 0%, hsl(290 100% 75%) 100%);
   }
 
   .text-gradient-electric {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(189 100% 50%) 0%, hsl(260 60% 55%) 100%);
+    background-image: linear-gradient(135deg, hsl(280 100% 65%) 0%, hsl(260 60% 55%) 100%);
   }
 
   /* Underline Animation */
@@ -183,7 +188,7 @@
   .nav-link::after {
     content: '';
     @apply absolute bottom-0 left-0 w-full h-0.5 scale-x-0 origin-right transition-transform duration-300;
-    background: linear-gradient(90deg, hsl(43 74% 53%), hsl(189 100% 50%));
+    background: hsl(280 100% 65%);
   }
 
   .nav-link:hover::after {

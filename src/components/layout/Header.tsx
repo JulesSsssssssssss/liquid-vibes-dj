@@ -11,6 +11,7 @@ const navigation = [
   { name: "DJ Entreprise", href: "/entreprise" },
   { name: "Location", href: "/location" },
   { name: "Photobooth", href: "/photobooth" },
+  { name: "Galerie", href: "/galerie" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -39,13 +40,16 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center">
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="font-display text-2xl font-bold"
+              className="flex items-center"
             >
-              <span className="text-gradient-gold">T.S</span>
-              <span className="text-foreground"> EVENT</span>
+              <img 
+                src="/logo.png" 
+                alt="T.S Event Logo" 
+                className="h-24 w-auto object-contain"
+              />
             </motion.div>
           </Link>
 

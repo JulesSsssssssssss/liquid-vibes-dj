@@ -18,7 +18,7 @@ const CTASection = () => {
         >
           <h2 className="font-display text-3xl md:text-5xl font-bold mb-6">
             Prêt à créer une{" "}
-            <span className="text-gradient-gold">soirée inoubliable</span> ?
+            <span className="text-gradient-purple">soirée inoubliable</span> ?
           </h2>
           <p className="text-muted-foreground text-lg mb-10">
             Contactez-moi pour discuter de votre projet. Devis gratuit et personnalisé.

@@ -42,7 +42,7 @@ const HeroSection = () => {
           >
             <span className="text-foreground">DJ Professionnel</span>
             <br />
-            <span className="text-gradient-gold">Nantes & Pays de la Loire</span>
+            <span className="text-gradient-purple">Nantes & Pays de la Loire</span>
           </motion.h1>
 
           {/* Subtitle */}

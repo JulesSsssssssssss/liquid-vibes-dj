@@ -73,7 +73,7 @@ const WhyChooseSection = () => {
             viewport={{ once: true }}
           >
             <h2 className="font-display text-3xl md:text-5xl font-bold mb-6">
-              Pourquoi <span className="text-gradient-gold">me choisir</span> ?
+              Pourquoi <span className="text-gradient-purple">me choisir</span> ?
             </h2>
             
             <p className="text-muted-foreground text-lg mb-10">

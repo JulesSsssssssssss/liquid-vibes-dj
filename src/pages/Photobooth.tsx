@@ -41,7 +41,7 @@ const Photobooth = () => {
               
               <h1 className="font-display text-4xl md:text-6xl font-bold mb-6">
                 Des souvenirs{" "}
-                <span className="text-gradient-gold">instantanés</span>
+                <span className="text-gradient-purple">instantanés</span>
               </h1>
               
               <p className="text-lg text-muted-foreground mb-8">
@@ -69,7 +69,7 @@ const Photobooth = () => {
             >
               <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
                 Le photobooth{" "}
-                <span className="text-gradient-gold">T.S Event</span>
+                <span className="text-gradient-purple">T.S Event</span>
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
                 Une expérience photo complète et personnalisée pour votre événement.
@@ -109,7 +109,7 @@ const Photobooth = () => {
             >
               <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
                 Exemples de{" "}
-                <span className="text-gradient-gold">photos</span>
+                <span className="text-gradient-purple">photos</span>
               </h2>
             </motion.div>
 

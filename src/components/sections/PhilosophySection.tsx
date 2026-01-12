@@ -32,7 +32,7 @@ const PhilosophySection = () => {
           className="text-center mb-16"
         >
           <h2 className="font-display text-3xl md:text-5xl font-bold mb-4">
-            Ma <span className="text-gradient-gold">Philosophie</span>
+            Ma <span className="text-gradient-purple">Philosophie</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Chaque événement est unique. Mon approche s'adapte à vos envies pour créer des moments mémorables.
